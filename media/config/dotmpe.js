@@ -2,10 +2,12 @@
 //
 // Configure loading modules from the lib directory,
 // except 'app' ones, 
+console.log('requirejs config');
+
 requirejs.config({
-    "baseUrl": "js/lib",
+    "baseUrl": "media/script/lib",
     "paths": {
-      "app": "../app",
+      "app": "../../application/dotmpe",
       "jquery": "//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min"
     }
 });
