@@ -1,5 +1,5 @@
-define(["d3"], function(d3) {
-  console.log(['d3 should be loaded now..', d3]);
+define(["d3"], function() {
+	window.d3 = require('d3'); // for rickshaw..
 });
 
 
