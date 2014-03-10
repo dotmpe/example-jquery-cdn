@@ -1,8 +1,9 @@
-// XXX Configured to run from static page in media/template
-// loading modules from the lib directory,
+// Place third party dependencies in the lib folder
+//
+// Configure loading modules from the lib directory,
 // except 'app' ones, 
 var paths = {
-	"app": "../requirejs-app",
+	"app": "../app",
 		
 	//"jquery": "//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min",
 	"jquery": "//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min",
@@ -13,7 +14,7 @@ var paths = {
 	"rickshaw": "//cdnjs.cloudflare.com/ajax/libs/rickshaw/1.4.6/rickshaw.min"
 }
 devPaths = {
-	"app": "../requirejs-app",
+	"app": "../app",
 		
 	"jquery": "//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery",
 	"jqueryui": "//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui",
@@ -23,13 +24,13 @@ devPaths = {
 	"rickshaw": "//cdnjs.cloudflare.com/ajax/libs/rickshaw/1.4.6/rickshaw"
 }; 
 requirejs.config({
-	baseUrl: "../../media/script/lib",
-//	paths: paths,
+	baseUrl: "js/lib",
 	paths: devPaths,
 	shim: {
 		"d3": { exports: "d3", },
 		"rickshaw": { exports: "Rickshaw", deps: [ "d3" ] },
 	}
+
 });
 //requirejs(["app/main"]);
 requirejs(["app/dashboard"]);
