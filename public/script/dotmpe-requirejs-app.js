@@ -2,7 +2,7 @@
 // loading modules from the lib directory,
 // except 'app' ones, 
 var paths = {
-	"app": "../requirejs-app",
+	"app": "../dotmpe-requirejs-app",
 		
 	//"jquery": "//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min",
 	"jquery": "//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min",
@@ -13,7 +13,7 @@ var paths = {
 	"rickshaw": "//cdnjs.cloudflare.com/ajax/libs/rickshaw/1.4.6/rickshaw.min"
 }
 devPaths = {
-	"app": "../requirejs-app",
+	"app": "../dotmpe-requirejs-app",
 		
 	"jquery": "//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery",
 	"jqueryui": "//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui",
@@ -23,7 +23,7 @@ devPaths = {
 	"rickshaw": "//cdnjs.cloudflare.com/ajax/libs/rickshaw/1.4.6/rickshaw"
 }; 
 requirejs.config({
-	baseUrl: "lib",
+	baseUrl: "script/lib",
 //	paths: paths,
 	paths: devPaths,
 	shim: {
@@ -32,6 +32,6 @@ requirejs.config({
 	}
 });
 requirejs(["graphdata"]);
-requirejs(["dotmpe-requirejs-app/toolkit"]);
-requirejs(["dotmpe-requirejs-app/d3"]);
-requirejs(["dotmpe-requirejs-app/dashboard"]);
+requirejs(["app/toolkit"]);
+requirejs(["app/d3"]);
+requirejs(["app/dashboard"]);

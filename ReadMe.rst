@@ -3,15 +3,27 @@ Based on RequireJS's `example-jquery-cdn <https://github.com/requirejs/example-j
 - `Static application template <media/template/app.html>`_ is in ``media/template``.
 - `Static Rickshaw demo <media/template/rickshaw.html>`_
 
-Changelog 2014-03-10
-  - Moved stuff around to fit personal htdocs project better.
-  - Added d3, Rickshaw. Fixed a little issue for Richshaw with d3.select failing.
+Changelog 
+  2014-03-10
+    - Moved stuff around to fit personal htdocs project better.
+    - Added d3, Rickshaw. Fixed a little issue for Richshaw with d3.select failing.
+  2014-05-04
+    - Moved paths to align with other nodejs apps.
+    - Using requireJS (at frontend) should be more convenient than
+      usig bower and coding library baths into the templates.
 
 ::
   
   .
   ├── ReadMe.rst
+  ├── app
+  ├── app.js
+  ├── config
+  │   ├── config.js
+  │   ├── express.coffee
+  │   └── routes.coffee
   ├── public
+  │   ├── image
   │   ├── script
   │   │   ├── dotmpe-requirejs-app
   │   │   │   ├── d3.js
@@ -20,9 +32,12 @@ Changelog 2014-03-10
   │   │   ├── dotmpe-requirejs-app.js
   │   │   └── lib
   │   │       └── graphdata.js
+  │   ├── style
   │   └── template
   │       ├── app.html
   │       └── rickshaw.html
+  ├── server
+  │   └── index.coffee
   └── tools
       ├── build.js
       ├── r.js

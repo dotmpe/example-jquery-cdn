@@ -1,0 +1,18 @@
+doctype html
+html(
+    lang='en',
+    xmlns='http://www.w3.org/1999/xhtml')
+  head
+    title
+      NodeJS + RequireJS bootstrap
+    script(
+        id="requirejs-2.1.10",
+        data-main="../script/dotmpe-requirejs-app.js",
+        src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js")
+  body
+    h1 Bootstrap
+    p This demonstrates bootstrapping RequireJS using CDN's for the most direct
+      access to latest libraries. This should be usefull for prototyping.
+    p This page is served by NodeJS from a Jade template by Express
+    div#chart
+
