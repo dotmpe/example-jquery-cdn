@@ -23,7 +23,7 @@ devPaths = {
 	"rickshaw": "//cdnjs.cloudflare.com/ajax/libs/rickshaw/1.4.6/rickshaw"
 }; 
 requirejs.config({
-	baseUrl: "../../media/script/lib",
+	baseUrl: "lib",
 //	paths: paths,
 	paths: devPaths,
 	shim: {
@@ -32,6 +32,6 @@ requirejs.config({
 	}
 });
 requirejs(["graphdata"]);
-requirejs(["app/toolkit"]);
-requirejs(["app/d3"]);
-requirejs(["app/dashboard"]);
+requirejs(["dotmpe-requirejs-app/toolkit"]);
+requirejs(["dotmpe-requirejs-app/d3"]);
+requirejs(["dotmpe-requirejs-app/dashboard"]);

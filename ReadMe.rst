@@ -10,19 +10,19 @@ Changelog 2014-03-10
 ::
   
   .
-  ├── media
+  ├── ReadMe.rst
+  ├── public
   │   ├── script
+  │   │   ├── dotmpe-requirejs-app
+  │   │   │   ├── d3.js
+  │   │   │   ├── dashboard.js
+  │   │   │   └── toolkit.js
   │   │   ├── dotmpe-requirejs-app.js
-  │   │   ├── lib
-  │   │   │   └── graphdata.js
-  │   │   └── requirejs-app
-  │   │       ├── d3.js
-  │   │       ├── dashboard.js
-  │   │       └── toolkit.js
+  │   │   └── lib
+  │   │       └── graphdata.js
   │   └── template
   │       ├── app.html
   │       └── rickshaw.html
-  ├── ReadMe.rst
   └── tools
       ├── build.js
       ├── r.js
