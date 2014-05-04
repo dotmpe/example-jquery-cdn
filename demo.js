@@ -6,14 +6,13 @@
  * GNU GPL v3
  */
 
+var express = require('express')
+
 /* Enable coffeescript */
 require('coffee-script/register');
+
 /* Enable LiveScript */
 require('LiveScript')
-
-// XXX just testing formats, not sure how everything turns out
-
-var express = require('express')
 
 // Load configurations
 var env = process.env.NODE_ENV || 'development'
@@ -27,7 +26,8 @@ var server = require('http').createServer(app)
 require('./config/express')(app, config)
 
 // Bootstrap routes
-require('./config/routes')(app)
+routes = require('./app/routes')
+require('./config/routes')(app, routes)
 
 // Start ...
 server.listen(app.get('port'), function () {

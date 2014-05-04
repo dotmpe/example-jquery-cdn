@@ -16,17 +16,22 @@ Changelog
     - Moved paths to align with other nodejs apps.
     - Using requireJS (at frontend) should be more convenient than
       usig bower and coding library baths into the templates.
-    
+
 ::
   
   .
   ├── ReadMe.rst
   ├── app
-  ├── app.js
+  │   ├── routes
+  │   │   └── index.coffee
+  │   └── views
+  │       └── index.jade
   ├── config
   │   ├── config.js
   │   ├── express.coffee
   │   └── routes.coffee
+  ├── demo.js
+  ├── package.json
   ├── public
   │   ├── image
   │   ├── script
@@ -38,11 +43,9 @@ Changelog
   │   │   └── lib
   │   │       └── graphdata.js
   │   ├── style
-  │   └── template
+  │   └── page
   │       ├── app.html
   │       └── rickshaw.html
-  ├── server
-  │   └── index.coffee
   └── tools
       ├── build.js
       ├── r.js
