@@ -22,6 +22,7 @@ Changelog
   .
   ├── ReadMe.rst
   ├── public
+  │   ├── image
   │   ├── script
   │   │   ├── dotmpe-requirejs-app
   │   │   │   ├── d3.js
@@ -30,7 +31,8 @@ Changelog
   │   │   ├── dotmpe-requirejs-app.js
   │   │   └── lib
   │   │       └── graphdata.js
-  │   └── template
+  │   ├── style
+  │   └── page
   │       ├── app.html
   │       └── rickshaw.html
   └── tools
