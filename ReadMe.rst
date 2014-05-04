@@ -3,6 +3,11 @@ Based on RequireJS's `example-jquery-cdn <https://github.com/requirejs/example-j
 - `Static application template <media/template/app.html>`_ is in ``media/template``.
 - `Static Rickshaw demo <media/template/rickshaw.html>`_
 
+Branch docs
+  nodeapp
+    - Moved to apps corresponding to node apps for easy seed.
+      Created branch nodeapp_demo to show actual example.
+
 Changelog 
   2014-03-10
     - Moved stuff around to fit personal htdocs project better.
@@ -11,7 +16,7 @@ Changelog
     - Moved paths to align with other nodejs apps.
     - Using requireJS (at frontend) should be more convenient than
       usig bower and coding library baths into the templates.
-
+    
 ::
   
   .
